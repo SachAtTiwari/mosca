@@ -13,7 +13,7 @@
     "publish-coverage": "(cat coverage/lcov.info | coveralls)",
     "jshint-lib": "jshint lib",
     "jshint-test": "jshint test",
-    "start": "./bin/mosca -v | bunyan",
+    "start": "./bin/mosca -v",
     "bundle": "browserify -r mqtt -s mqtt | uglifyjs --screw-ie8 > public/mqtt.js",
     "prepublish": "npm run bundle"
   },
